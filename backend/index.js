@@ -33,6 +33,11 @@ const initData = {
 
 if (!fs.existsSync(DATA_FILE)) fs.writeJsonSync(DATA_FILE, initData, { spaces: 2 });
 
+// Health check route
+app.get('/', (req, res) => {
+  res.json({ message: 'Student Progress API is running!', status: 'OK' });
+});
+
 app.post('/auth/login', async (req, res) => {
   try {
     console.log('Login attempt:', req.body);
