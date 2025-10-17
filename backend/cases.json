@@ -1,0 +1,11 @@
+{
+  "cases": [
+    {
+      "studentEmail": "student@example.com",
+      "notes": "Dental",
+      "synced": true,
+      "id": "case_1760700321250",
+      "createdAt": "2025-10-17T11:25:21.250Z"
+    }
+  ]
+}

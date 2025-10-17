@@ -1,0 +1,111 @@
+{
+  "cases": [
+    {
+      "procedure": "scaling",
+      "notes": "sdfasf",
+      "patientAge": "23",
+      "synced": true,
+      "studentId": "s1",
+      "id": "case_1760702760242",
+      "createdAt": "2025-10-17T12:06:00.242Z",
+      "validated": false
+    },
+    {
+      "procedure": "extraction",
+      "notes": "Cavity filling",
+      "patientAge": "25",
+      "synced": true,
+      "studentId": "s1",
+      "id": "case_1760702780026",
+      "createdAt": "2025-10-17T12:06:20.026Z",
+      "validated": false
+    },
+    {
+      "procedure": "cavity",
+      "notes": "adsfaf",
+      "patientAge": "23",
+      "synced": false,
+      "studentId": "s1",
+      "id": "case_1760702833385",
+      "createdAt": "2025-10-17T12:07:13.385Z",
+      "validated": false
+    }
+  ],
+  "users": [
+    {
+      "id": "s1",
+      "role": "student",
+      "name": "Student One",
+      "email": "student@example.com",
+      "teacherId": "t1",
+      "quota": {
+        "target": 50,
+        "completed": 3
+      },
+      "streaks": 7,
+      "badges": [
+        "streak_master"
+      ],
+      "avatar": "basic",
+      "research": [
+        {
+          "id": "research_1760700400000",
+          "title": "AI in Dental Diagnosis",
+          "type": "project",
+          "description": "Exploring machine learning applications in dental imaging",
+          "status": "ongoing",
+          "createdAt": "2025-10-17T11:26:40.000Z",
+          "validated": false
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "role": "student",
+      "name": "Student Two",
+      "email": "student2@example.com",
+      "teacherId": "t1",
+      "quota": {
+        "target": 50,
+        "completed": 0
+      },
+      "streaks": 2,
+      "badges": [],
+      "avatar": "basic",
+      "research": []
+    },
+    {
+      "id": "t1",
+      "role": "teacher",
+      "name": "Teacher One",
+      "email": "teacher@example.com",
+      "students": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "badges": [
+    {
+      "id": "cavity_king",
+      "name": "Cavity King",
+      "description": "Complete 10 cavity procedures",
+      "requirement": 10,
+      "type": "cavity"
+    },
+    {
+      "id": "scaling_star",
+      "name": "Scaling Star",
+      "description": "Complete 15 scaling procedures",
+      "requirement": 15,
+      "type": "scaling"
+    },
+    {
+      "id": "streak_master",
+      "name": "Streak Master",
+      "description": "Maintain 7-day streak",
+      "requirement": 7,
+      "type": "streak"
+    }
+  ]
+}
